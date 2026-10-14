@@ -1,7 +1,6 @@
-cat << 'EOF' > README.md
 # 🌐 Otckas Testnet (EVM Protocol Infrastructure)
 
-[![Chain ID](https://img.shields.io/badge/Chain%20ID-88991-blue.svg)](https://rpc.otckas.com)
+[![Chain ID](https://img.shields.io/badge/Chain%20ID-88991-blue.svg)]([https://rpc.otckas.com](https://rpc.otckas.com))
 [![Block Explorer](https://img.shields.io/badge/Explorer-OtckasScan-orange.svg)](https://explorer.otckas.com)
 [![Twitter Follow](https://img.shields.io/badge/Twitter-@otckas-1DA1F2?logo=x&logoColor=white)](https://x.com/otckas)
 [![Telegram Community](https://img.shields.io/badge/Telegram-@otckas-2CA5E0?logo=telegram&logoColor=white)](https://t.me/otckas)
@@ -22,9 +21,9 @@ Otckas is a decentralized, high-throughput Layer-1 EVM-compatible blockchain des
 | **Chain ID** | `88991` (Hex: `0x15baf`) |
 | **Currency Symbol** | `OKAS` |
 | **Decimals** | `18` |
-| **Public JSON-RPC URL** | `[https://rpc.otckas.com](https://rpc.otckas.com)` |
-| **Block Explorer** | `[https://explorer.otckas.com](https://explorer.otckas.com)` |
-| **Testnet Faucet** | `[https://faucet.otckas.com](https://faucet.otckas.com)` |
+| **Public JSON-RPC URL** | [https://rpc.otckas.com](https://rpc.otckas.com) |
+| **Block Explorer** | [https://explorer.otckas.com](https://explorer.otckas.com) |
+| **Testnet Faucet** | [https://faucet.otckas.com](https://faucet.otckas.com) |
 | **Official Burn Address** | `0x000000000000000000000000000000000000dEaD` |
 | **Bridge Vault Contract** | `0x4bde079e3a94a647b6cb3a3009a3d180fc170975` |
 
@@ -34,7 +33,7 @@ Otckas is a decentralized, high-throughput Layer-1 EVM-compatible blockchain des
 
 Otckas utilizes a mathematical supply-invariant model for all asset migrations:
 
-```
+```text
 [ Otckas Testnet (88991) ]                           [ External Network (Remote) ]
            │                                                       ▲
   User invokes burnAndBridge()                                     │
@@ -54,10 +53,10 @@ Emits `BridgeBurned` On-Chain Event ──────────────�
 
 ### 1. MetaMask Manual Setup
 - **Network Name:** Otckas Testnet
-- **New RPC URL:** `[https://rpc.otckas.com](https://rpc.otckas.com)`
+- **New RPC URL:** [https://rpc.otckas.com](https://rpc.otckas.com)
 - **Chain ID:** `88991`
 - **Currency Symbol:** `OKAS`
-- **Block Explorer URL:** `[https://explorer.otckas.com](https://explorer.otckas.com)`
+- **Block Explorer URL:** [https://explorer.otckas.com](https://explorer.otckas.com)
 
 ### 2. Querying Node State via cURL
 Test network health and block height directly from your command line:
@@ -108,6 +107,7 @@ contract OtckasStandardToken {
 ```
 
 ### Hardhat Pipeline Configuration (`hardhat.config.js`)
+
 ```javascript
 require("@nomicfoundation/hardhat-toolbox");
 
@@ -147,10 +147,5 @@ Follow official protocol developments:
 ---
 
 ## 🛡️ License & Standards
-This ecosystem codebase is distributed under the [MIT License](LICENSE).
-EOF
 
-git add README.md
-git commit -m "docs: enrich README with architecture diagrams and quickstart code"
-git push -u origin main
-echo "README UPDATED SUCCESSFULLY!"
+This ecosystem codebase is distributed under the [MIT License](LICENSE).
